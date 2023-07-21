@@ -1,6 +1,6 @@
 <!-- task cards -->
 <div class="card p-5 crd">
-    <div class="text-danger p-1"><fa-icon class="deleteIcon"  [icon]="faTimes"></fa-icon></div>
+    <div class="text-danger p-1"><fa-icon (click)="onDelete(task)" class="deleteIcon" [icon]="faTimes"></fa-icon></div>
     <h4 class="border border-1 rounded-1 p-2 text-head">{{ task.text }}</h4>
     <div class="rounded-1 bg-info bg-gradient p-3 text-content">
         <p class="">{{ task.day }}</p>
