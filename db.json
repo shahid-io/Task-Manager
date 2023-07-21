@@ -8,19 +8,19 @@
     },
     {
       "id": 2,
-      "text": "Frontend",
+      "text": "Frontend Features",
       "day": "May 5th at 2:20pm",
       "reminder": true
     },
     {
       "id": 4,
-      "text": "Backend",
+      "text": "Backend REST API's",
       "day": "May 5th at 2:20pm",
       "reminder": true
     },
     {
       "id": 5,
-      "text": "Product",
+      "text": "Product Management",
       "day": "May 5th at 2:20pm",
       "reminder": true
     },
@@ -32,3 +32,4 @@
     }
   ]
 }
+
