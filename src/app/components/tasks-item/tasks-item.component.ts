@@ -14,7 +14,7 @@ export class TasksItemComponent implements OnInit {
   constructor() {
     this.task = {
       id: 0,
-      text: '',
+      title: '',
       day: '',
       reminder: false,
     };

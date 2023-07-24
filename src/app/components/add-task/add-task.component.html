@@ -1,18 +1,20 @@
-<form class="mt-2 w-25 form-control">
+<form class="mt-2 form-control" (ngSubmit)="onSubmit()">
     <div class="form-control mb-2">
         <label for="title">Task &nbsp;</label>
-        <input type="text" name="title" id="title" placeholder="Add Task" class="form-control form-control-sm">
+        <input type="text" name="title" [(ngModel)]="title" id="title" placeholder="Project Management (meeting)"
+            class="form-control form-control-sm">
     </div>
     <div class="form-control mb-2">
         <label for="day">Day & Time &nbsp;</label>
-        <input type="text" name="day" id="day" placeholder="15 June 2:00pm" class="form-control form-control-sm">
+        <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="15 June 2:00pm"
+            class="form-control form-control-sm">
     </div>
     <div class="form-control mb-2">
         <label for="reminder">Reminder &nbsp;</label>
-        <input type="checkbox" name="reminder" id="reminder" placeholder="Add Task">
+        <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder" placeholder="Add Task">
     </div>
-    <div>
-        <input type="button" value="Save Task" class="btn btn-outline-success">
+    <div class="form-control">
+        <input type="submit" value="Save Task" class="btn btn-outline-success">
     </div>
 
 </form>

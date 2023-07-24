@@ -1,7 +1,7 @@
 <!-- task cards -->
 <div [ngClass]="{reminder: task.reminder}" (dblclick)="onToggle(task)" class="card p-5 crd task">
     <div class="text-danger p-1"><fa-icon (click)="onDelete(task)" class="deleteIcon" [icon]="faTimes"></fa-icon></div>
-    <h4 class="border border-1 rounded-1 p-2 text-head">{{ task.text }}</h4>
+    <h4 class="border border-1 rounded-1 p-2 text-head">{{ task.title }}</h4>
     <div class="rounded-1 bg-info bg-gradient p-3 text-content">
         <p class="">{{ task.day }}</p>
         <p class="">{{ task.reminder }}</p>

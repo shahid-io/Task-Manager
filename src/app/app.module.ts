@@ -9,7 +9,7 @@ import { TasksComponent } from './components/tasks/tasks.component';
 import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddTaskComponent } from './components/add-task/add-task.component';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,8 @@ import { AddTaskComponent } from './components/add-task/add-task.component';
     BrowserModule,
     FontAwesomeModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
