@@ -8,6 +8,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { TasksItemComponent } from './components/tasks-item/tasks-item.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AddTaskComponent } from './components/add-task/add-task.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     ButtonComponent,
     TasksComponent,
-    TasksItemComponent
+    TasksItemComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,

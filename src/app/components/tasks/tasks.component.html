@@ -6,12 +6,7 @@
     <p>Reminder : {{task.reminder}}</p>
   </div>
 </div> -->
-
+<app-add-task></app-add-task>
 <div class="d-flex flex-wrap mt-4 card-container">
-  <app-tasks-item
-    *ngFor="let task of tasks" [task]="task" 
-    (onDeleteTask)="deleteTask(task)" 
-    (onToggleReminder)="toggleReminder(task)"
-  >
-  </app-tasks-item>
+  <app-tasks-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)" (onToggleReminder)="toggleReminder(task)"></app-tasks-item>
 </div>
