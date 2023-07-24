@@ -1,4 +1,4 @@
-.deleteIcon{
+.deleteIcon {
     padding: 5px;
     margin-bottom: 10px;
     transition: all 0.3s ease;
@@ -6,15 +6,22 @@
     border-bottom: 1px solid transparent;
     color: red;
 }
+
 .deleteIcon:hover {
     cursor: pointer;
     font-size: 30px;
     color: rgb(190, 190, 13);
 }
-.text-content:hover{
+
+.text-content:hover {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 20px;
     text-decoration: underline;
     background-color: white;
+}
+
+.reminder {
+
+    border-left: 15px solid green;
 }

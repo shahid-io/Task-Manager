@@ -3,9 +3,9 @@ import { Task } from "./Task"
 export const TASKS: Task[] = [
     {
         id: 1,
-        text: 'Doctor Appointment',
-        day: 'May 5th at 2:20pm',
-        reminder: true
+        text: 'Doctor Appointment 123',
+        day: 'May 15th at 2:20pm',
+        reminder: false
     },
     {
         id: 2,

@@ -9,7 +9,7 @@ import { Task } from '../../Task';
 export class TasksItemComponent implements OnInit {
   @Input() task: Task;
   @Output() onDeleteTask: EventEmitter<Task> = new EventEmitter();
-
+  @Output() onToggleReminder: EventEmitter<Task> = new EventEmitter();
   faTimes = faTimes;
   constructor() {
     this.task = {
@@ -23,7 +23,10 @@ export class TasksItemComponent implements OnInit {
 
   }
   onDelete(task: Task) {
-    this.onDeleteTask.emit(task)
+    this.onDeleteTask.emit(task);
+  }
+  onToggle(task: Task) {
+    this.onToggleReminder.emit(task);
   }
 
 }
